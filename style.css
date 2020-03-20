@@ -1,0 +1,61 @@
+body{
+   background-image: url('1.jpg');
+    width: 400px;
+    height: 550px;
+    border: 15px solid rgb(176, 175, 233);
+    padding: 10px;
+    margin: 10px;
+}
+
+div.image{
+    position: absolute;
+  top: 70px;
+  bottom: 80px;
+  right: 400px;
+  width: 200px;
+  height: 100px;
+}
+
+div.flag{
+    position: absolute;
+  top: 200px;
+  right: 400px;
+  width: 200px;
+  height: 100px;
+}
+
+div.proshow{
+    color: rgb(17, 13, 20);
+    position: absolute;
+    top: 130px;
+    right: 180px;
+    width: 400px;
+    height: 100px;
+}
+
+#heading{
+    text-align: center;
+}
+
+#front-table{
+    padding: 10px;
+    padding-left: 50px;
+}
+
+#table{
+    display: inline-block;
+    padding: 10px;
+    padding-left: 50px;
+    align-items: center;
+}
+
+#Instructions{
+    display: inline-block;
+    text-align: left;
+    
+}
+
+#tab{
+    width:400px;
+    text-align: center;
+}
