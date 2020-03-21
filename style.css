@@ -1,57 +1,40 @@
 body{
-   background-image: url('1.jpg');
-    width: 400px;
-    height: 550px;
+   background-image: url('111.jpeg');
+    width: 60%;
     border: 15px solid rgb(176, 175, 233);
     padding: 10px;
-    margin: 10px;
+    padding-bottom: 7em;
+    margin: auto;
 }
 
-div.image{
-    position: absolute;
-  top: 70px;
-  bottom: 80px;
-  right: 400px;
-  width: 200px;
-  height: 100px;
-}
-
-div.flag{
-    position: absolute;
-  top: 200px;
-  right: 400px;
-  width: 200px;
-  height: 100px;
-}
-
-div.proshow{
-    color: rgb(17, 13, 20);
-    position: absolute;
-    top: 130px;
-    right: 180px;
-    width: 400px;
-    height: 100px;
-}
 
 #heading{
     text-align: center;
+    text-decoration-color: white;
+    color: white;
 }
 
 #front-table{
+    margin: auto;
+    width: 80%;
     padding: 10px;
-    padding-left: 50px;
+    padding-left: 250px;
+    color: white;
 }
 
 #table{
-    display: inline-block;
-    padding: 10px;
-    padding-left: 50px;
+    margin: auto;
+    height: 180px;
     align-items: center;
+    padding: 10px;
+    padding-left: 180px;
 }
 
 #Instructions{
     display: inline-block;
     text-align: left;
+    color: white;
+    font-size: 1em;
     
 }
 

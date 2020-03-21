@@ -1,8 +1,8 @@
 gamelength=30;
 timerID=null
 var playing=false;
-var numholes=6*10;
-var currentpos=-1;
+var numholes=10*10;
+var currentpos=-1; 
 
 function clrholes()
 {
@@ -34,6 +34,24 @@ timerID=setTimeout("showtime(temp)",1000);
 }
 }
 
+function play() 
+{
+stoptimer();
+if(playing) 
+{
+stopgame();
+return;
+}
+playing=true;
+clrholes();
+totalhits=0;
+document.cpanel.score.value=totalhits;
+display("Playing");
+launch();
+showtime(gamelength);
+}
+
+
 function stopgame() 
 {
 stoptimer();
@@ -42,6 +60,7 @@ document.cpanel.timeleft.value=0;
 clrholes();
 display("Game Over");
 alert('Game Over.\nYour score is:  '+totalhits);
+
 if(totalhits>20 && totalhits<30)
 {
    alert('CONGRATS !!! \n  YOU ARE GOING TO LEVEL 2');
@@ -80,22 +99,7 @@ else
 }
 }
 
-function play() 
-{
-stoptimer();
-if(playing) 
-{
-stopgame();
-return;
-}
-playing=true;
-clrholes();
-totalhits=0;
-document.cpanel.score.value=totalhits;
-display("Playing");
-launch();
-showtime(gamelength);
-}
+
 
 function display(msg) 
 {
